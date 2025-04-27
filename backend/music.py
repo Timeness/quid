@@ -4,7 +4,7 @@ from yt_dlp import YoutubeDL
 async def download_audio(query):
     ydl_opts = {
         'format': 'bestaudio/best',
-        'outtmpl': 'downloads/%(title)s.%(ext)s',
+        'outtmpl': '/tmp/%(title)s.%(ext)s',
         'quiet': True,
     }
     with YoutubeDL(ydl_opts) as ydl:
