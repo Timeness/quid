@@ -1,0 +1,20 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Room</title>
+    <link href="tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
+    <h1 class="text-3xl mb-4">Music Room</h1>
+    <audio id="player" controls class="w-full mb-4"></audio>
+
+    <div id="search-area" class="flex space-x-2 mb-4">
+        <input id="query" type="text" placeholder="Search Song..." class="p-2 rounded bg-gray-800 w-72">
+        <button onclick="playSong()" class="p-2 bg-blue-600 rounded">Play</button>
+    </div>
+    <div id="info" class="text-lg"></div>
+    <script src="script.js"></script>
+</body>
+</html>
